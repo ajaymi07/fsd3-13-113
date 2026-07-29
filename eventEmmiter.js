@@ -16,5 +16,13 @@ const starts = () => {
 task.once('greet', starts);
 
 task.on('greet', sayHi); 
+task.on('greet',(name)=>{
+    console.log(`${name} starts shopping`);
+    
+});
+task.on('greet',(name)=>{
+    console.log(`${name} logged out`);
+    
+});
 task.emit('greet', 'Anil Pandey');
 task.emit('greet', 'Ajay Mishra');
