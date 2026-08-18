@@ -40,3 +40,22 @@ it directconnect with client os than browser
   - link()
   - unlink()
   - syslink()
+
+  ## CRUD operation
+   create/insert, Read/Retrieve, Update,Delete
+
+   ## item 
+     id,name,price,qty
+
+   ## Opretions
+     1. add to cart
+     2. show cart
+     3. Remove from cart
+     4. Update quantity from cart
+     5. checkout
+
+  NOTE: all items will be stored in hdd , so after termination of program we can retrive cart details   
+
+## Required files :
+  - crud.js -it contains all the methods and entry point 
+  - products.json - it contains the product details in array form
