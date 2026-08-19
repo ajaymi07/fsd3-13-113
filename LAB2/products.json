@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": 110,
+    "name": "hp-laptop",
+    "price": 120000,
+    "qty": 2
+  },
+  {
+    "id": 120,
+    "name": "s26-ultra",
+    "price": 96000,
+    "qty": 2
+  }
+]

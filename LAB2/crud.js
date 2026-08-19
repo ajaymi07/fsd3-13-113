@@ -18,6 +18,20 @@ const addTocart=async(item)=>{
       await saveCart(products);
 };
 
+const showCart=async()=>{
+    console.log("show cart");
+    
+}
+const updateCart=async()=>{
+  console.log("update cart");
+  
+}
+const deleteFromCart=async()=>{
+    console.log("delete from cart");
+    
+}
+
+
 
 
 const main = async()=>{
@@ -34,16 +48,32 @@ const main = async()=>{
     console.log("Enter choice:",choice );
        switch(Number(choice)){
           case 1:
-            console.log("add to cart");
+            let data = await cin.question("Enter id,name,price,qty");
+            let p = data.split(",");
+           
+             let q=p.map((item)=> item.trim());
+           
+             let [id,name,price,qty]=q;
+             console.log(id,name,price,qty);
+             const product={
+              id:Number(id),name,
+              price:Number(price),
+              qty:Number(qty),
+             };
+            //  console.log(product);
+             await addTocart(product);
+             
+            
+            
               break;
           case 2:
-            console.log("show cart items");
+            await showCart();
               break;
           case 3:
-            console.log("remove items");
+            await deleteFromCart();
               break;
           case 4:
-            console.log("update quantity");
+            await updateCart();
               break; 
            case 5:
             console.log("see you later ....😄");
