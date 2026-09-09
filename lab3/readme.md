@@ -21,3 +21,27 @@ package from npm
 -it also create a folder node_modules automatically 
 -node_modules holds the package /library files 
 -generally we ignore the node_modules by .gitignore
+
+## Status Codes
+
+
+- 200 -> Ok
+- 201 -> Created
+- 400 -> Bad request
+- 401 -> Unauthorized
+- 403 -> Forbidden
+- 404 -> Not found
+- 500 -> Internal 
+
+## Content Type
+
+- text/plain
+- text/html
+- application/json
+- text/css
+
+the content type and status code can be send back to client by two ways
+
+1. res.writeHead
+2. res.setHeader
+3. res.statusCode 
