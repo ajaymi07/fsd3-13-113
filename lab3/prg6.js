@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
     }),
     );
   }
-  else if (req.url === "/" && req.method === "POST") {
+  else if (req.url === "/api/v1/products" && req.method === "POST") {
     let body = "";
     req.on("data", (chunk) => {
       body += chunk;

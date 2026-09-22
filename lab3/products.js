@@ -8,3 +8,7 @@ let nextID=3;
  export const getAllProducts = () =>{
     return products; 
 }
+
+ export const addProducts = () =>{
+    
+ }
