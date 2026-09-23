@@ -78,3 +78,16 @@ headers is use to tell a client, yhe ytype of data sent by the server. it may be
 6. Application /auth -->for tokens 
 the header can be by res object at server side by two way
 
+
+
+ ## Get 
+  - no parameter will pass  to the server and when we recieve 
+
+## Post
+ - to add record we pass the value from body section in json formate of (eco) api tester
+
+## delete
+ - to delete ay product we pass parameter thatb is the id of parameter
+
+## update 
+- we pass id from url and data to update from 
