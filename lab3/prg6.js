@@ -1,7 +1,7 @@
 import http from "http";
 import {
   getAllProducts,
-  addProduct,
+  addProducts,
   deleteProduct,
   getProductById,
   updateProduct,
