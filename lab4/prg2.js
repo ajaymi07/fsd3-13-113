@@ -8,10 +8,10 @@ const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(dirname, "public", "index.html"));
+    res.sendFile(path.join(dirname, "htmlPages", "index.html"));
 });
 app.get("/", (req, res) => {
-    res.sendFile(path.join(dirname, "public", "about.html"));
+    res.sendFile(path.join(dirname, "htmlPages", "about.html"));
 });
 
 app.use((req, res) => {
@@ -21,3 +21,5 @@ app.use((req, res) => {
 app.listen(3333, () => {
     console.log("prg2 is running ");
 });
+
+app.listen(3333,()=>console.log("prg2 is running at 3333"));
