@@ -18,3 +18,5 @@ b. update script {
 #  SEND
 it is use to revert back content to the client it may be html ,json,html file ,plane text .
 we can also add status code with sttus function it can be change with send  function
+
+#  MAP
