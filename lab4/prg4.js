@@ -12,6 +12,14 @@ app.get("/", (req,res)=>{
        ` );
 });
 
+app.get("/api/products",(req,res)=>{
+     const items = products.map(
+        ({reviews,description,...rest })=>rest,
+     );
+
+    res.status(200).json({count: items.length,data:items})
+})
+
 
 
 
